@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Curso de React.js - 2025
 
-## Getting Started
+Repositório do curso de React.js atualizado para 2025, desenvolvido por [Tayse Rosa](https://github.com/TayseRosa). Este projeto utiliza o framework Next.js, com suporte a TypeScript e estilização com Tailwind CSS.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [React.js](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [PostCSS](https://postcss.org/)
+- [pnpm](https://pnpm.io/) (gerenciador de pacotes)
+
+## 📁 Estrutura do Projeto
+
+```
+curso-reactjs/
+├── public/             # Arquivos públicos (imagens, ícones, etc.)
+├── src/                # Código-fonte da aplicação
+│   ├── app/            # Páginas e componentes principais
+│   └── ...             # Outros diretórios e arquivos
+├── .gitignore          # Arquivos e pastas ignorados pelo Git
+├── next.config.ts      # Configurações do Next.js
+├── package.json        # Dependências e scripts do projeto
+├── postcss.config.mjs  # Configurações do PostCSS
+├── tailwind.config.ts  # Configurações do Tailwind CSS
+├── tsconfig.json       # Configurações do TypeScript
+└── README.md           # Documentação do projeto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Instalação e Execução
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Siga os passos abaixo para clonar o repositório, instalar as dependências e iniciar o servidor de desenvolvimento:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Clone o repositório
+git clone https://github.com/TayseRosa/curso-reactjs.git
 
-## Learn More
+# Acesse o diretório do projeto
+cd curso-reactjs
 
-To learn more about Next.js, take a look at the following resources:
+# Instale as dependências
+pnpm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Inicie o servidor de desenvolvimento
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+## 📚 Conteúdo do Curso
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este curso aborda os seguintes tópicos:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Fundamentos do React.js
+- Criação de componentes funcionais
+- Gerenciamento de estado com Hooks
+- Roteamento com Next.js
+- Estilização com Tailwind CSS
+- Tipagem estática com TypeScript
+- Boas práticas de desenvolvimento
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).

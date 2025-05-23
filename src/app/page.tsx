@@ -4,11 +4,13 @@ import { Card } from "@/components/Card";
 import { peopleList } from "@/data/peopleList";
 
 export default function Page() {
-  const list = peopleList.map((person) => <li>{person.name}</li>);
-
   return (
     <div>
-      {list}
+      <ul>
+        {peopleList.map((person) => (
+          <li>{person.name}</li>
+        ))}
+      </ul>
 
       <h1 className="font-bold text-lg">Olá mundo!</h1>
       <Card phrase="Alguma frase top." author="Coach de milhões" />
