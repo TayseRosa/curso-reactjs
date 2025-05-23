@@ -2,6 +2,10 @@
 
 Repositório do curso de React.js atualizado para 2025, desenvolvido por [Tayse Rosa](https://github.com/TayseRosa). Este projeto utiliza o framework Next.js, com suporte a TypeScript e estilização com Tailwind CSS.
 
+## Preview
+
+![Preview da aplicação](preview.png)
+
 ## 🚀 Tecnologias Utilizadas
 
 - [React.js](https://reactjs.org/)
