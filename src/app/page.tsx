@@ -8,7 +8,10 @@ export default function Page() {
     <div>
       <ul>
         {peopleList.map((person) => (
-          <li>{person.name}</li>
+          <li key={person.id}>
+            {" "}
+            {person.id} - {person.name}
+          </li>
         ))}
       </ul>
 

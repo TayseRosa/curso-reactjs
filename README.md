@@ -28,6 +28,19 @@ curso-reactjs/
 └── README.md           # Documentação do projeto
 ```
 
+## MAP - JAVASCRIPT
+
+```
+<ul>
+{peopleList.map((person) => (
+    <li key={person.id}>
+    {" "}
+    {person.id} - {person.name}
+    </li>
+))}
+</ul>
+```
+
 ## 🛠️ Instalação e Execução
 
 Siga os passos abaixo para clonar o repositório, instalar as dependências e iniciar o servidor de desenvolvimento:
