@@ -4,44 +4,25 @@ import { Card } from "@/components/Card";
 import { peopleList } from "@/data/peopleList";
 
 export default function Page() {
-  const chemists = peopleList.filter(
-    (person) => person.profession === "chemist"
-  );
+  const fullTime = new Intl.DateTimeFormat("pt-Br", {
+    timeStyle: "short",
+    hour12: false,
+  }).format();
+
+  const hour = new Date().getHours();
+  let greeting = "";
+  if (hour >= 0 && hour < 12) {
+    greeting = "Bom dia ☀️";
+  } else if (hour >= 12 && hour < 18) {
+    greeting = "Boa tarde ☀️";
+  } else {
+    greeting = "Boa noite 🌕";
+  }
 
   return (
-    <div>
-      {chemists.length > 0 && (
-        <>
-          <h3>Lista de químicos</h3>
-          <ul>
-            {chemists.map((person) => (
-              <li>
-                {person.name} - {person.profession}
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
-
-      <hr />
-
-      <ul>
-        {peopleList.map((person) => (
-          <li key={person.id}>
-            {person.id} - {person.name} - {person.profession}
-          </li>
-        ))}
-      </ul>
-
-      <h1 className="font-bold text-lg">Olá mundo!</h1>
-      <Card phrase="Alguma frase top." author="Coach de milhões" />
-      <Square />
-      <Circle />
-      <Person
-        name="Tayse Rosa"
-        avatar="https://www.github.com/tayserosa.png"
-        roles={["CEO WPCode Brasil"]}
-      />
+    <div className="w-screen h-screen flex flex-col justify-center items-center text-white bg-gradient-to-r from-sky-500 to-indigo-500">
+      <div className="text-9xl">{fullTime}</div>
+      <div className="text-5xl bold">{greeting}</div>
     </div>
   );
 }
