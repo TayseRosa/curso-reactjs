@@ -1,9 +1,18 @@
-import { EmojiRating } from "@/components/EmojiRating";
+"use client";
 
 export default function Page() {
+  function handleClick() {
+    alert("funcionou");
+  }
+
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center ">
-      <EmojiRating rate={3.2} />
+    <div className="w-screen h-screen flex justify-center items-center ">
+      <button
+        onClick={handleClick}
+        className="p-3 bg-blue-700 text-white rounded-md"
+      >
+        Clique aqui
+      </button>
     </div>
   );
 }
