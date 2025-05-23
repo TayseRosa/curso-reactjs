@@ -9,7 +9,7 @@ Repositório do curso de React.js atualizado para 2025, desenvolvido por [Tayse 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [PostCSS](https://postcss.org/)
-- [pnpm](https://pnpm.io/) (gerenciador de pacotes)
+- [npm](https://npm.io/) (NPM gerenciador de pacotes)
 
 ## 📁 Estrutura do Projeto
 
@@ -40,10 +40,10 @@ git clone https://github.com/TayseRosa/curso-reactjs.git
 cd curso-reactjs
 
 # Instale as dependências
-pnpm install
+npm install
 
 # Inicie o servidor de desenvolvimento
-pnpm dev
+npm dev
 ```
 
 A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
